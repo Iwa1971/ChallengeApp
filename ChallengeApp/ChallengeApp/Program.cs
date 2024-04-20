@@ -8,7 +8,7 @@ Employee employee3 = new Employee("Iwona", "Mak", 29);
 List<Employee> employees = new List<Employee>()
 {
     employee1, employee2, employee3
-};
+}
 
 
 
