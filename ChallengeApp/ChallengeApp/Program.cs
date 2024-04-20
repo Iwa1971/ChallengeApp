@@ -46,5 +46,3 @@ Console.WriteLine("Name:" + EmployeeWithMaxResult.Name);
 Console.WriteLine("Surname:" + EmployeeWithMaxResult.Surname);
 Console.WriteLine("Age:" + EmployeeWithMaxResult.Age);
 Console.WriteLine("Points:" + EmployeeWithMaxResult.result);
-
-
