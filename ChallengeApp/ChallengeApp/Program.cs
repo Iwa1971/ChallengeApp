@@ -27,17 +27,17 @@ Console.WriteLine($"Min: {statistics.Min}");
 
 Console.WriteLine("Statistic with metod For");
 Console.WriteLine($"Average:{statistics.Average:N2}");
-Console.WriteLine($"Max:{statistics}");
-Console.WriteLine($"Min:{statistics}");
+Console.WriteLine($"Max: {statistics.Max}");
+Console.WriteLine($"Min: {statistics.Min}");
 
 Console.WriteLine("Statistic with metod Do and While");
 Console.WriteLine($"Average:{statistics.Average:N2}");
-Console.WriteLine($"Max:{statistics}");
-Console.WriteLine($"Min:{statistics}");
+Console.WriteLine($"Max:{statistics.Max}");
+Console.WriteLine($"Min:{statistics.Min}");
 
 Console.WriteLine("Statistic with metod While");
 Console.WriteLine($"Average:{statistics.Average:N2}");
-Console.WriteLine($"Max:{statistics}");
-Console.WriteLine($"Min:{statistics}");
+Console.WriteLine($"Max:{statistics.Max}");
+Console.WriteLine($"Min:{statistics.Min}");
 
 
