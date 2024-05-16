@@ -2,19 +2,26 @@
 using System;
 using System.Diagnostics;
 
-var employee = new Employee("Seba", "Kot", 23);
-employee.AddGrade("5");
-employee.AddGrade(2000);
-employee.AddGrade(7);
-employee.AddGrade(0.5);
-employee.AddGrade("Piotr");
-employee.AddGrade(-2.5);
+Console.WriteLine("Witamy w Programie do liczenia statystyk Pracownikow");
+Console.WriteLine("====================================================");
+Console.WriteLine();
+
+var employee = new Employee("Name", "Surname");
+while (true)
+{
+    Console.WriteLine("Podaj kolejna ocene pracownika: ");
+    var input = Console.ReadLine();
+    if (input == "q")
+    {
+        break;
+    }
+    employee.AddGrade(input);
+}
 
 var statistics = employee.GetStatistics();
-
-Console.WriteLine($"Average:{statistics.Average:N2}");
-Console.WriteLine($"Max: {statistics.Max}");
-Console.WriteLine($"Min: {statistics.Min}");
+Console.WriteLine($"averageLetter:{statistics.AverageLetter}");
+Console.WriteLine($"Min:{statistics.Min}");
+Console.WriteLine($"Max:{statistics.Max}");
 
 
 
