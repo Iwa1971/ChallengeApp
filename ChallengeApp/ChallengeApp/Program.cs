@@ -6,7 +6,7 @@ Console.WriteLine("Witamy w Programie do liczenia statystyk Pracownikow");
 Console.WriteLine("====================================================");
 Console.WriteLine();
 
-var employee = new Employee("Name", "Surname");
+var employee = new Employee ("Name", "Surname", "Gender");
 while (true)
 {
     Console.WriteLine("Podaj kolejna ocene pracownika: ");
