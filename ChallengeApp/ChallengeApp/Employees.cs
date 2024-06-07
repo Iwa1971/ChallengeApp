@@ -1,9 +1,9 @@
-﻿using System.Diagnostics;
-
+﻿
 namespace ChallengeApp
 
 {
-    public class Employee : Person
+    public class Employee : IEmployee
+    
 
     {
         private List<float> grades = new List<float>();
@@ -14,15 +14,20 @@ namespace ChallengeApp
             
             }
         public Employee(string name, string surname, string gender)
-            : base(name, surname, gender)
+          
             {
-        
-            }
+            this.Name = name;
+            this.Surname = surname;
+            this.Gender = gender;
+        }
         public Employee(string name, string surname, int age)
-            : base(name,surname, "no gender")
+          
             { 
             this.Age = age;
             }
+        public string Name { get; private set; }
+        public string Surname { get; private set; }
+        public string Gender { get; private set; }
         public int Age { get; private set; }
         public void AddGrade(float grade)
 
